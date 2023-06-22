@@ -1,0 +1,82 @@
+body {
+    background-color: #c9c9c9;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+img {
+    width: 70%;
+    border-radius: 8px;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;    
+    margin: 10px 5px;
+}
+
+nav ul li a{
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    text-decoration: none;   
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+.container-general {
+    /* body completo */
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.encabezado {
+    /*desde foto hasta nav*/
+    display: flex;
+    flex-direction: column;
+}
+
+.cuerpo {
+    /*todos los recuadros a la derecha*/
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.presentacion {
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 8px;
+}
+
+.estudios {
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 8px;
+}
+
+.trayectoria {
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 8px;
+}
+
+.trabajos {
+    background-color: white;
+    padding: 20px 50px;
+    border-radius: 8px;
+}
+
+.listas-sin-formato {
+    list-style: none;
+    padding-left: 0;    
+}
