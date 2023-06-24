@@ -6,8 +6,9 @@ body {
 }
 
 img {
+    max-width: 250px;
     width: 70%;
-    border-radius: 8px;
+    border-radius: 6px;
 }
 
 nav ul {
@@ -15,17 +16,22 @@ nav ul {
 }
 
 nav ul li {
-    list-style: none;    
+    list-style: none;
     margin: 10px 5px;
 }
 
-nav ul li a{
+nav ul li a {
     display: flex;
     justify-content: center;
     background-color: #fff;
     border-radius: 8px;
     padding: 20px;
-    text-decoration: none;   
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: rgb(12, 12, 12);
+    color: #fff;
 }
 
 ul li a {
@@ -35,8 +41,12 @@ ul li a {
 .container-general {
     /* body completo */
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 20px;
+}
+
+.inicio {
+    padding-left: 20px;
 }
 
 .encabezado {
@@ -52,31 +62,32 @@ ul li a {
     row-gap: 30px;
 }
 
-.presentacion {
+.cards {
     background-color: white;
     padding: 20px 50px;
-    border-radius: 8px;
-}
-
-.estudios {
-    background-color: white;
-    padding: 20px 50px;
-    border-radius: 8px;
-}
-
-.trayectoria {
-    background-color: white;
-    padding: 20px 50px;
-    border-radius: 8px;
-}
-
-.trabajos {
-    background-color: white;
-    padding: 20px 50px;
-    border-radius: 8px;
+    border-radius: 6px;
+    box-shadow: 5px 5px 20px #9c9898;
 }
 
 .listas-sin-formato {
     list-style: none;
-    padding-left: 0;    
+    padding-left: 0;
+}
+
+@media screen and (min-width: 750px) {
+    .container-general {
+        /* body completo */
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .inicio {
+        padding-left: 20px;
+        padding-right: 100px;
+    }
+
+    .foto {
+        padding-left: 30px;
+    }
 }
